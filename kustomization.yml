@@ -3,3 +3,5 @@ kind: Kustomization
 
 resources:
 - argocd-applications/argocd.yml
+- argocd-applications/istio-operator.yml
+- argocd-applications/istio.yml
