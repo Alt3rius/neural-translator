@@ -27,3 +27,10 @@ spec:
           patches:
           - path: kind
             value: DaemonSet
+          - path: spec.strategy
+            value:
+          - path: spec.updateStrategy
+            value:
+              rollingUpdate:
+                maxUnavailable: 1
+
