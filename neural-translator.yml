@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/Alt3rius/neural-translator
+    repoURL: https://github.com/Alt3rius/neural-translator.git
     targetRevision: HEAD
     path: .
     kustomize:
