@@ -7,3 +7,9 @@ resources:
 
 patchesStrategicMerge:
 - patches/configmap-patch.yaml
+
+images:
+- name: redis
+  newName: redis
+  newTag: 6.2.3
+  # digest: sha256:85f11bc7bc6f247b8bc475ab48110076af9a251fcffd61c6b5d7b79a40c4604a
