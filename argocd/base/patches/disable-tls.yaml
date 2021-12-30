@@ -12,4 +12,6 @@ spec:
         - --staticassets
         - /shared/app
         - --insecure
+        - --repo-server-timeout-seconds
+        - "180"
 
