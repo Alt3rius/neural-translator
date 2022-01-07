@@ -7,3 +7,4 @@ resources:
 - postgres-service.yml
 - todoapp.yml
 - todoapp-service.yml
+- namespace.yml
