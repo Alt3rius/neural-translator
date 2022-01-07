@@ -32,5 +32,5 @@ spec:
           - /bin/bash
           - -c
           - |
-            python manage.py makemigrations &&
+            python manage.py makemigrations -v 3  &&
             python manage.py migrate
