@@ -1,0 +1,16 @@
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: postgres-vs
+  namespace: todoapp
+spec:
+  hosts:
+  - "*"
+  gateways:
+  - mesh
+  http:
+  - route:
+    - destination:
+        port:
+          number: 5432
+        host: postgres.todoapp.svc.cluster.local

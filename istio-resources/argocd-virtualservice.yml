@@ -8,6 +8,7 @@ spec:
   - "argocd.alterai.pl"
   gateways:
   - argocd/argocd-gateway
+  - mesh
   http:
   - route:
     - destination:

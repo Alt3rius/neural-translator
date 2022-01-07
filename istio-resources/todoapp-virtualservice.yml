@@ -1,0 +1,17 @@
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: todoapp-vs
+  namespace: todoapp
+spec:
+  hosts:
+  - "alterai.pl"
+  gateways:
+  - todoapp/todoapp-gateway
+  - mesh
+  http:
+  - route:
+    - destination:
+        port:
+          number: 8000
+        host: todoapp.todoapp.svc.cluster.local
