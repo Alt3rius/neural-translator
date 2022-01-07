@@ -5,7 +5,7 @@ metadata:
   namespace: todoapp
 spec:
   hosts:
-  - "*"
+  - "postgres.todoapp.svc.cluster.local"
   gateways:
   - mesh
   http:
