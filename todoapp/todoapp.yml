@@ -19,10 +19,11 @@ spec:
         - name: todoapp
           image: alterius/todoapp-backend:v1.0.6
           command:
-          - gunicorn
-          - --bind
-          - ":8000"
-          - todo_drf.wsgi:application
+          - sleep 10000
+          # - gunicorn
+          # - --bind
+          # - ":8000"
+          # - todo_drf.wsgi:application
           ports:
             - containerPort: 8000
       initContainers:
@@ -33,4 +34,5 @@ spec:
           - -c
           - |
             python manage.py makemigrations -v 3  &&
+            python manage.py makemigrations api -v 3  &&
             python manage.py migrate
