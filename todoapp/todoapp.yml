@@ -17,17 +17,17 @@ spec:
     spec:
       containers:
         - name: todoapp
-          image: alterius/todoapp-backend:v1.0.4
+          image: alterius/todoapp-backend:v1.0.5
           command:
           - gunicorn
           - --bind
           - ":8000"
-          - /var/www/todo-app/todo_drf.wsgi:application
+          - todo_drf.wsgi:application
           ports:
             - containerPort: 8000
       initContainers:
         - name: todoapp-migrate
-          image: alterius/todoapp-backend:v1.0.4
+          image: alterius/todoapp-backend:v1.0.5
           command:
           - /bin/bash
           - -c
