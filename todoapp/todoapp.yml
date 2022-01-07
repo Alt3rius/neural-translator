@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: todoapp
-          image: alterius/todoapp-backend:v1.0.3
+          image: alterius/todoapp-backend:v1.0.4
           command:
           - gunicorn
           - --bind
@@ -27,7 +27,7 @@ spec:
             - containerPort: 8000
       initContainers:
         - name: todoapp-migrate
-          image: alterius/todoapp-backend:v1.0.3
+          image: alterius/todoapp-backend:v1.0.4
           command:
           - /bin/bash
           - -c
