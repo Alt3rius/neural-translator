@@ -22,7 +22,7 @@ spec:
           - gunicorn
           - --bind
           - ":8000"
-          - /var/www/todo-app/todo_drf.wsgi
+          - /var/www/todo-app/todo_drf.wsgi:application
           ports:
             - containerPort: 8000
       initContainers:
