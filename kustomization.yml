@@ -8,4 +8,5 @@ resources:
 - argocd-applications/cert-manager.yml
 - argocd-applications/istio-resources.yml
 - argocd-applications/certificates.yml
-- argocd-applications/todoapp.yml
+- argocd-applications/knative.yml
+- argocd-applications/translator.yml

@@ -1,0 +1,10 @@
+apiVersion: serving.knative.dev/v1alpha1
+kind: DomainMapping
+metadata:
+  name: alterai.pl
+  namespace: translator
+spec:
+  ref:
+    name: translator
+    kind: Service
+    apiVersion: serving.knative.dev/v1

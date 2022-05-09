@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: todoapp
+  name: knative
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: https://github.com/Alt3rius/neural-translator.git
     targetRevision: HEAD
-    path: todoapp
+    path: translator
     kustomize:
       version: v4.0.5
   destination:

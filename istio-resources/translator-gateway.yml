@@ -1,8 +1,8 @@
 apiVersion: networking.istio.io/v1beta1
 kind: Gateway
 metadata:
-  name: todoapp-gateway
-  namespace: todoapp
+  name: translator-gateway
+  namespace: translator
 spec:
   selector:
     istio: ingressgateway # use Istio default gateway implementation
